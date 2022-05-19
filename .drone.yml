@@ -11,8 +11,8 @@ steps:
     image: node:lts
     commands:
       - /bin/sh ./setup-firefox.sh
-      - npm install
-      - npm test
+      - yarn install
+      - yarn test
 # trigger:
 #   event:
 #     - pull_request
