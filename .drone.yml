@@ -10,10 +10,10 @@ steps:
   - name: test
     image: node:lts-slim
     commands:
-      - apt-get install software-properties-common
-      # - add-apt-repository ppa:mozillateam/ppa
       - apt update
-      - apt install firefox
+      - apt install software-properties-common -y
+      # - add-apt-repository ppa:mozillateam/ppa
+      - apt install firefox -y
       - npm install
       - npm test
 # trigger:
