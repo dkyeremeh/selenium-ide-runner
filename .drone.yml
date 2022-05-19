@@ -8,7 +8,7 @@ concurrency:
 
 steps:
   - name: test
-    image: node:lts-slim
+    image: node:lts
     commands:
       - apt update
       - apt install software-properties-common -y
