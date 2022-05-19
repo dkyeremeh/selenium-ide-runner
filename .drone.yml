@@ -12,7 +12,7 @@ steps:
     commands:
       - apt update
       - apt install software-properties-common -y
-      # - add-apt-repository ppa:mozillateam/ppa
+      - add-apt-repository ppa:mozillateam/ppa
       - apt install firefox -y
       - npm install
       - npm test
