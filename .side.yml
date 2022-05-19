@@ -1,6 +1,6 @@
 capabilities:
-  browserName: "chrome"
-  goog:chromeOptions:
+  browserName: "firefox"
+  moz:firefoxOptions:
     args:
-      - headless
+      - -headless
 baseUrl: "https://vault.test.dekyfin.com"

@@ -10,6 +10,7 @@ steps:
   - name: test
     image: node:lts-slim
     commands:
+      - apt install firefox
       - npm install
       - npm test
 # trigger:
