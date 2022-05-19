@@ -203,13 +203,6 @@
       "target": "Bitwarden Web Vault",
       "targets": [],
       "value": ""
-    }, {
-      "id": "6ba3d9a6-7f82-420f-b466-23c9e6d794c1",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
     }]
   }, {
     "id": "7dfec508-ae74-4a9f-91d2-d1ca0a5a862e",
@@ -309,13 +302,6 @@
         ["xpath=//a", "xpath:position"],
         ["xpath=//a[contains(.,'Get master password hint')]", "xpath:innerText"]
       ],
-      "value": ""
-    }, {
-      "id": "fcace1dd-0614-4486-9d47-2c7f7ec7b50f",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
       "value": ""
     }]
   }, {
@@ -531,13 +517,6 @@
       "target": "css=.text-muted > .fa",
       "targets": [],
       "value": "Add Folder Icon Button"
-    }, {
-      "id": "832bd717-c9fa-4175-a092-33510a074dd6",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
     }]
   }, {
     "id": "3d7aba0c-ffaf-4e5a-b03a-a12dd7d8af9f",
