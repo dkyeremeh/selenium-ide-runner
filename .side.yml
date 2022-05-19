@@ -1,0 +1,6 @@
+capabilities:
+  browserName: "chrome"
+  goog:chromeOptions:
+    args:
+      - headless
+baseUrl: "https://vault.test.dekyfin.com"

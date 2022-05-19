@@ -1,0 +1,1025 @@
+{
+  "id": "9b4b19de-db5a-484e-bbcc-68e14872bcd3",
+  "version": "2.0",
+  "name": "vaultwarden",
+  "url": "https://vault.test.dekyfin.com",
+  "tests": [{
+    "id": "92d4eed8-8caa-4135-94df-3e59c72ba2db",
+    "name": "Account Signup",
+    "commands": [{
+      "id": "31309537-0f21-4087-962f-c47f49cd6455",
+      "comment": "",
+      "command": "run",
+      "target": "Logout",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27baee05-0f54-4aed-84d6-122b196db3a3",
+      "comment": "",
+      "command": "open",
+      "target": "/#/register",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32bc5418-355c-4a27-a265-1159884014ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=name", "id"],
+        ["name=Name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b0c2f9d-4290-40f1-8d5c-4dac233d7fb8",
+      "comment": "",
+      "command": "run",
+      "target": "utils.setUserID",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50577e2a-59df-4d49-91eb-df638d3e81c6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"user\" + ${userID} + \"@email.com\"",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "09548f8d-00ce-4f28-8237-8b53578ca224",
+      "comment": "",
+      "command": "executeScript",
+      "target": "localStorage.setItem(\"email\", ${email})",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa3a06df-dad2-4bbd-97fc-73a71b1797f1",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=Email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${email}"
+    }, {
+      "id": "8be4027d-b4ee-4d8d-94ee-e8abc009f418",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=Name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3868cba9-69fe-4294-ab91-bc6201cb32c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=Name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Random User"
+    }, {
+      "id": "2a4a0c81-8478-491e-9f9b-035f1f5beb40",
+      "comment": "",
+      "command": "click",
+      "target": "id=masterPassword",
+      "targets": [
+        ["id=masterPassword", "id"],
+        ["name=MasterPassword", "name"],
+        ["css=#masterPassword", "css:finder"],
+        ["xpath=//input[@id='masterPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e36a1123-c848-45bd-b70a-6966a66e89cb",
+      "comment": "",
+      "command": "type",
+      "target": "id=masterPassword",
+      "targets": [
+        ["id=masterPassword", "id"],
+        ["name=MasterPassword", "name"],
+        ["css=#masterPassword", "css:finder"],
+        ["xpath=//input[@id='masterPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "TestPass123!"
+    }, {
+      "id": "230f631e-5912-48e9-ad41-43dd9e79774b",
+      "comment": "",
+      "command": "click",
+      "target": "id=masterPasswordRetype",
+      "targets": [
+        ["id=masterPassword", "id"],
+        ["name=MasterPassword", "name"],
+        ["css=#masterPassword", "css:finder"],
+        ["xpath=//input[@id='masterPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6181a544-cf8f-4754-857f-379a284d7d10",
+      "comment": "",
+      "command": "type",
+      "target": "id=masterPasswordRetype",
+      "targets": [
+        ["id=masterPasswordRetype", "id"],
+        ["name=MasterPasswordRetype", "name"],
+        ["css=#masterPasswordRetype", "css:finder"],
+        ["xpath=//input[@id='masterPasswordRetype']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "TestPass123!"
+    }, {
+      "id": "60d56235-d1ea-4b64-8b91-d02025cad259",
+      "comment": "",
+      "command": "click",
+      "target": "id=hint",
+      "targets": [
+        ["id=hint", "id"],
+        ["name=Hint", "name"],
+        ["css=#hint", "css:finder"],
+        ["xpath=//input[@id='hint']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7819774-3125-4665-bae7-95f3e510ad83",
+      "comment": "",
+      "command": "type",
+      "target": "id=hint",
+      "targets": [
+        ["id=hint", "id"],
+        ["name=Hint", "name"],
+        ["css=#hint", "css:finder"],
+        ["xpath=//input[@id='hint']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "testpass"
+    }, {
+      "id": "0fe14111-8a9b-4479-a39e-812ab7d54985",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b1c4b9e-22ec-4e73-828c-fcb53a8840ef",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.toast-message > .ng-star-inserted",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "74934e35-cf97-4755-8b51-cc4f7998e1f6",
+    "name": "Home Page > Opens successfully",
+    "commands": [{
+      "id": "19b5d460-086d-4ef7-891e-1425a147c1d6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f02fa154-ff69-4da3-9f0d-34394c54da77",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Bitwarden Web Vault",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ba3d9a6-7f82-420f-b466-23c9e6d794c1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7dfec508-ae74-4a9f-91d2-d1ca0a5a862e",
+    "name": "Home Page > Expected elements are present",
+    "commands": [{
+      "id": "11ad5d30-bfa2-419e-9fe8-6063f8c839c6",
+      "comment": "",
+      "command": "open",
+      "target": "/#/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7f588e6-cf91-4c6f-b34f-3757eb70f47d",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Bitwarden Web Vault",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb6ea3bb-3de3-4ca9-aa16-ebc2f521a99a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//p",
+      "targets": [
+        ["css=.lead", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Log in or create a new account to access your secure vault.')]", "xpath:innerText"]
+      ],
+      "value": "Log in or create a new account to access your secure vault."
+    }, {
+      "id": "3ef949d1-a04f-4912-8a73-3f68dffe4e87",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,' Log In')]",
+      "targets": [
+        ["css=.btn > span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,' Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "63ff0c2d-748f-4831-90e1-4d14252241d9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(@href, '#/register')]",
+      "targets": [
+        ["linkText=Create Account", "linkText"],
+        ["css=.ml-2", "css:finder"],
+        ["xpath=//a[contains(@href, '#/register?email=')]", "xpath:href"],
+        ["xpath=//div[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Create Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b38c377-ef4d-4f4c-a19f-166b1d32822a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//label[contains(.,'Email Address')]",
+      "targets": [],
+      "value": "Email Address"
+    }, {
+      "id": "7f3c7cdc-68ef-4c4d-a5b4-3b760cf72cf5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@id='email']",
+      "targets": [
+        ["id=email", "id"],
+        ["name=Email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "652b493d-df9c-4952-9b43-8ed1724b71f5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@id='masterPassword']",
+      "targets": [
+        ["id=masterPassword", "id"],
+        ["name=MasterPassword", "name"],
+        ["css=#masterPassword", "css:finder"],
+        ["xpath=//input[@id='masterPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c85ff9a-c331-4ba6-a9dd-d91f1deb68ad",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Get master password hint",
+      "targets": [
+        ["linkText=Get master password hint", "linkText"],
+        ["css=.form-text > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Get master password hint')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/hint')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Get master password hint')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcace1dd-0614-4486-9d47-2c7f7ec7b50f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "887ba442-1505-4a2e-806b-b3cf335f2aef",
+    "name": "Home Page > Signup button redirects to signup page",
+    "commands": [{
+      "id": "b9bef01d-ef0f-44ea-b323-e1602e98ca79",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d3fb121-03b7-4ef8-a901-493933395855",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Bitwarden Web Vault",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9aacc49e-ebc7-4c94-a655-41770509936f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, '#/register')]",
+      "targets": [
+        ["linkText=Create Account", "linkText"],
+        ["css=.ml-2", "css:finder"],
+        ["xpath=//a[contains(@href, '#/register?email=')]", "xpath:href"],
+        ["xpath=//div[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Create Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38b43e4c-2a30-4c73-9766-c73180ef299f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.lead",
+      "targets": [
+        ["css=.lead", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Create Account')]", "xpath:innerText"]
+      ],
+      "value": "Create Account"
+    }]
+  }, {
+    "id": "005f8e00-febe-4108-8f24-d286285ea239",
+    "name": "Account Login",
+    "commands": [{
+      "id": "715b9022-b85b-478a-b2a4-57c39f7c63a9",
+      "comment": "",
+      "command": "run",
+      "target": "Logout",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b75bb27-efda-4651-9e74-7ef7d91287d8",
+      "comment": "",
+      "command": "run",
+      "target": "utils.resizeWindow",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0a35f8d-351f-4719-acb3-59e763750ead",
+      "comment": "",
+      "command": "if",
+      "target": "! localStorage.email",
+      "targets": [],
+      "value": "Check if account has been created"
+    }, {
+      "id": "97f967f4-c157-4c17-9568-54817806eaa3",
+      "comment": "",
+      "command": "run",
+      "target": "Account Signup",
+      "targets": [],
+      "value": "Create User"
+    }, {
+      "id": "22f23973-fe00-4ef6-9e87-c802ef57fe1e",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62b664ab-9c19-4845-a429-96a33f748d50",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b18c0134-7c4e-4e90-83fc-da714635ece6",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9323b703-733b-45fe-a6bf-bbc269239c9d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return localStorage.email",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "40344845-36fa-4f1b-9966-87151dcef135",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [],
+      "value": "${email}"
+    }, {
+      "id": "4cb73e79-24f4-4da5-b77f-366ba527bc49",
+      "comment": "",
+      "command": "click",
+      "target": "id=masterPassword",
+      "targets": [
+        ["id=masterPassword", "id"],
+        ["name=MasterPassword", "name"],
+        ["css=#masterPassword", "css:finder"],
+        ["xpath=//input[@id='masterPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f177030b-4a8c-4c1d-9e26-3ce792d6d25a",
+      "comment": "",
+      "command": "type",
+      "target": "id=masterPassword",
+      "targets": [
+        ["id=masterPassword", "id"],
+        ["name=MasterPassword", "name"],
+        ["css=#masterPassword", "css:finder"],
+        ["xpath=//input[@id='masterPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "TestPass123!"
+    }, {
+      "id": "a2556ff1-6d26-41d0-8abe-fe48c825d67a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7411460a-083c-43dc-8ced-31eb347a3c9d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.toast-message > .ng-star-inserted",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "43451c6c-dc06-4e6b-8913-3c6a89b1e233",
+    "name": "Vault > Relevant links are present",
+    "commands": [{
+      "id": "78436bce-329d-40ed-98aa-40883396e701",
+      "comment": "",
+      "command": "run",
+      "target": "Account Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca0de580-86eb-49dd-9910-7e8bb201b4d9",
+      "comment": "",
+      "command": "open",
+      "target": "/#/vault",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21de01d8-6d2b-422c-8a87-d7a1085c3d75",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(@href, '#/vault')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8800c02-353e-4a9f-9534-c6351d7ce460",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Send",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36e10ba8-133e-4232-9325-026453e20441",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Tools",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f708902d-9fe7-48c0-ae36-4ae314735b19",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Settings",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e854d52b-0c57-4528-9beb-530698623e92",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=(//button[@type='button'])[4]",
+      "targets": [
+        ["css=.btn-sm:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Item')]", "xpath:innerText"]
+      ],
+      "value": "Add item button"
+    }, {
+      "id": "71dd543b-cfd1-42c1-9e49-99dd4bb6c19a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.text-muted > .fa",
+      "targets": [],
+      "value": "Add Folder Icon Button"
+    }, {
+      "id": "832bd717-c9fa-4175-a092-33510a074dd6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3d7aba0c-ffaf-4e5a-b03a-a12dd7d8af9f",
+    "name": "Logout",
+    "commands": [{
+      "id": "d55b7279-834a-4055-8284-e72c3169d2ed",
+      "comment": "",
+      "command": "open",
+      "target": "/#/lock",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a278719b-c296-434d-b9f9-86c75d472005",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//p[contains(.,'Your vault is locked. Verify your master password to continue.')]",
+      "targets": [],
+      "value": "isLocked"
+    }, {
+      "id": "99808aad-cf98-4390-8a75-c3e76dab1deb",
+      "comment": "",
+      "command": "if",
+      "target": "${isLocked}>0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b4e1450-a20d-47e2-b3ab-3d402f533b3b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Log Out')]",
+      "targets": [
+        ["css=.btn-outline-secondary", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f19b0c4-5b89-43fd-84c2-1a9419fab962",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aea8db0a-b463-4189-aa6e-28809598ec00",
+      "comment": "",
+      "command": "open",
+      "target": "/#/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c258ada5-48d2-45db-a0fc-b20a1aaa0582",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9a672adb-b186-4e79-98b4-9fe38b6b7932",
+    "name": "Vault > Create Organisation",
+    "commands": [{
+      "id": "fef90b97-cd95-4508-af89-72345fe67bea",
+      "comment": "",
+      "command": "run",
+      "target": "Account Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74c8b42f-3e20-4c37-b32b-9b614af44606",
+      "comment": "",
+      "command": "open",
+      "target": "/#/vault",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b9162d8-ec73-4ab4-91e5-b142af11789a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, '#/settings/create-organization')]",
+      "targets": [
+        ["linkText=New Organization", "linkText"],
+        ["css=.btn-block", "css:finder"],
+        ["xpath=//a[contains(@href, '#/settings/create-organization')]", "xpath:href"],
+        ["xpath=//app-organizations/a", "xpath:position"],
+        ["xpath=//a[contains(.,' New Organization')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b4d300b-8c4d-480f-aa4a-d08e8c5eb187",
+      "comment": "",
+      "command": "run",
+      "target": "utils.getUserID",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec1b117a-9205-4e67-8efd-2f5ed9d62184",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=Name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "029d692b-fec5-4524-a6e1-ae2ab4ffb859",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=Name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "org${userID}"
+    }, {
+      "id": "623fabd0-da08-4465-ba3a-dfbaacd16a6f",
+      "comment": "",
+      "command": "click",
+      "target": "id=billingEmail",
+      "targets": [
+        ["id=billingEmail", "id"],
+        ["name=BillingEmail", "name"],
+        ["css=#billingEmail", "css:finder"],
+        ["xpath=//input[@id='billingEmail']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f10e19b6-0db3-4184-a1cf-7f5ce1bc072f",
+      "comment": "",
+      "command": "type",
+      "target": "id=billingEmail",
+      "targets": [
+        ["id=billingEmail", "id"],
+        ["name=BillingEmail", "name"],
+        ["css=#billingEmail", "css:finder"],
+        ["xpath=//input[@id='billingEmail']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "org${userID}@email.com"
+    }, {
+      "id": "cf75d927-18fe-46b9-99d6-13156c291696",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > span",
+      "targets": [
+        ["css=.btn > span", "css:finder"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57b9c4b8-434b-47c6-bfab-c2d02181bcd8",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.toast-message > .ng-star-inserted",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bdb5d8ff-ef8e-4496-bd63-00f7b8de165d",
+    "name": "Vault > Create Folder",
+    "commands": [{
+      "id": "50026920-18d5-4dc8-b7d7-ded0f0d30893",
+      "comment": "",
+      "command": "run",
+      "target": "Account Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8eea2a2c-5812-45ae-b638-6f08963ef1d4",
+      "comment": "",
+      "command": "open",
+      "target": "/#/vault",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a4015da-aea1-41a0-acc9-9fdd014a0678",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-muted > .fa",
+      "targets": [
+        ["css=.text-muted > .fa", "css:finder"],
+        ["xpath=//h3[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "174fd0cd-0c9f-45f0-b080-7fe92f22af2f",
+      "comment": "",
+      "command": "run",
+      "target": "utils.getUserID",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ab5e948-48dc-4fc5-8eb4-217a58e76808",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-muted > .fa-plus",
+      "targets": [
+        ["css=.text-muted > .fa-plus", "css:finder"],
+        ["xpath=//h3[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cf5f528-359c-480b-bed4-c0629bb18806",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=name",
+      "targets": [],
+      "value": "500"
+    }, {
+      "id": "5c389e70-35d6-4b55-9f86-d6081a3667b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f9632ff-5d0d-44e0-b9c6-2e4b1fe06bcf",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [],
+      "value": "folder${userID}"
+    }, {
+      "id": "9f080a34-14a4-4e9d-8df3-894928def6af",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Save')]",
+      "targets": [
+        ["css=.btn > span", "css:finder"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b228ed4b-5d41-4394-8ebf-1038c295d06f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.toast-message > .ng-star-inserted",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "97e1c3f6-f7ad-4804-8bff-1e0e8c15a7e2",
+    "name": "utils.getUserID",
+    "commands": [{
+      "id": "d2fd8448-2f75-4593-b0d8-8138c9d6d464",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return localStorage.getItem(\"userID\")",
+      "targets": [],
+      "value": "userID"
+    }]
+  }, {
+    "id": "63079f0f-7c6d-4499-b505-e4b72e442dc9",
+    "name": "utils.setUserID",
+    "commands": [{
+      "id": "56e62dbd-bda4-45b9-a9fd-3350f4329aef",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.floor(Math.random() * 1e8)",
+      "targets": [],
+      "value": "userID"
+    }, {
+      "id": "d6799c0e-d5e4-4b36-bb2d-5eb4248440b4",
+      "comment": "Set UserID",
+      "command": "executeScript",
+      "target": "localStorage.setItem(\"userID\", ${userID} )",
+      "targets": [],
+      "value": "${userID}"
+    }]
+  }, {
+    "id": "98f50b4d-a3c8-41f2-b780-3604a617f4aa",
+    "name": "Vault > Store Credentials",
+    "commands": [{
+      "id": "9cbfd89e-9669-445f-941e-0122739bda3c",
+      "comment": "",
+      "command": "run",
+      "target": "Account Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "469024ab-d83b-477f-a341-8e3434c9503e",
+      "comment": "",
+      "command": "open",
+      "target": "/#/vault",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53b6c561-1f1c-4582-97ea-947d93a7ec9f",
+      "comment": "",
+      "command": "run",
+      "target": "utils.getUserID",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aedc94d1-570a-42c9-b2c4-4df71f9f2676",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn.ng-star-inserted",
+      "targets": [
+        ["css=.btn-sm:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Item')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb1e8228-c7db-4a5b-92ce-b694bb9cb413",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=name",
+      "targets": [],
+      "value": "1000"
+    }, {
+      "id": "2b03e8db-dc61-4ca5-adab-242c90d34902",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=Name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81c3af42-8f29-41f9-8473-80f37932ccf8",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=Name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "gmail"
+    }, {
+      "id": "769b218a-46e7-4f9d-891f-830c82d3422c",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginUsername",
+      "targets": [
+        ["id=loginUsername", "id"],
+        ["name=Login.Username", "name"],
+        ["css=#loginUsername", "css:finder"],
+        ["xpath=//input[@id='loginUsername']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "114c364e-7db4-42cb-8ecf-a0818b25557e",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginUsername",
+      "targets": [
+        ["id=loginUsername", "id"],
+        ["name=Login.Username", "name"],
+        ["css=#loginUsername", "css:finder"],
+        ["xpath=//input[@id='loginUsername']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "user${userID}"
+    }, {
+      "id": "91b12378-02b2-469a-895e-94b8f7ec75a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginPassword",
+      "targets": [
+        ["id=loginPassword", "id"],
+        ["name=Login.Password", "name"],
+        ["css=#loginPassword", "css:finder"],
+        ["xpath=//input[@id='loginPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "790ab00b-2c69-4a43-8a01-367596ed0b49",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginPassword",
+      "targets": [
+        ["id=loginPassword", "id"],
+        ["name=Login.Password", "name"],
+        ["css=#loginPassword", "css:finder"],
+        ["xpath=//input[@id='loginPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "RandomPass${userID}"
+    }, {
+      "id": "9ff7735f-814d-48ae-9a11-5427bfce1938",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginUri0",
+      "targets": [
+        ["id=loginUri0", "id"],
+        ["css=#loginUri0", "css:finder"],
+        ["xpath=//input[@id='loginUri0']", "xpath:attributes"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd1a4dc3-639e-4e70-b644-0b0cd2cc07d3",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginUri0",
+      "targets": [
+        ["id=loginUri0", "id"],
+        ["css=#loginUri0", "css:finder"],
+        ["xpath=//input[@id='loginUri0']", "xpath:attributes"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": "https://google.com"
+    }, {
+      "id": "64497cf3-a0c0-4349-9ea2-7bcd30ba54cf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Save')]",
+      "targets": [
+        ["css=.btn > span", "css:finder"],
+        ["xpath=//div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4fb1196-63af-4e07-a7bc-53d9a3b061a3",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.toast-message > .ng-star-inserted",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "1855384c-a7dd-468a-86e9-0bfb75ca4ffe",
+    "name": "utils.resizeWindow",
+    "commands": [{
+      "id": "c945343d-c548-4509-a10f-012b138c76f8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1300x720",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "060c8c9c-d13c-4c10-ab8f-8202cf2b722c",
+    "name": "Account",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["005f8e00-febe-4108-8f24-d286285ea239", "92d4eed8-8caa-4135-94df-3e59c72ba2db"]
+  }, {
+    "id": "80963500-4e61-4944-8376-747f1611b152",
+    "name": "Home",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["887ba442-1505-4a2e-806b-b3cf335f2aef", "74934e35-cf97-4755-8b51-cc4f7998e1f6", "7dfec508-ae74-4a9f-91d2-d1ca0a5a862e"]
+  }, {
+    "id": "a56c81be-45aa-440b-a21b-5055a9d6e924",
+    "name": "Vault",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9a672adb-b186-4e79-98b4-9fe38b6b7932", "bdb5d8ff-ef8e-4496-bd63-00f7b8de165d", "43451c6c-dc06-4e6b-8913-3c6a89b1e233", "98f50b4d-a3c8-41f2-b780-3604a617f4aa"]
+  }],
+  "urls": ["https://vault.test.dekyfin.com/"],
+  "plugins": []
+}

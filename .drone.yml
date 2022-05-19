@@ -1,0 +1,19 @@
+---
+kind: pipeline
+type: docker
+name: test
+
+concurrency:
+  limit: 1
+
+steps:
+  - name: test
+    image: node:lts-slim
+    commands:
+      - npm install
+      - npm test
+# trigger:
+#   event:
+#     - pull_request
+#     - rollback
+#     - merge
