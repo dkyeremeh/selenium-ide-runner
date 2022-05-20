@@ -6,6 +6,7 @@
     "author": "Desmond Kyeremeh <elDekyfin@gmail.com>",
     "license": "MIT",
     "devDependencies": {
+        "chromedriver": "^101.0.0",
         "geckodriver": "^3.0.1",
         "selenium-side-runner": "^3.17.0"
     },

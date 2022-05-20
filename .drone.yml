@@ -10,7 +10,7 @@ steps:
   - name: test
     image: node:lts
     commands:
-      - /bin/sh ./setup-firefox.sh
+      - /bin/sh ./setup-browser.sh
       - yarn install
       - yarn test
 # trigger:
