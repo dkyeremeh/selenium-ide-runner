@@ -964,14 +964,14 @@
     "id": "060c8c9c-d13c-4c10-ab8f-8202cf2b722c",
     "name": "Account",
     "persistSession": false,
-    "parallel": false,
+    "parallel": true,
     "timeout": 300,
     "tests": ["005f8e00-febe-4108-8f24-d286285ea239", "92d4eed8-8caa-4135-94df-3e59c72ba2db"]
   }, {
     "id": "80963500-4e61-4944-8376-747f1611b152",
     "name": "Home",
     "persistSession": false,
-    "parallel": false,
+    "parallel": true,
     "timeout": 300,
     "tests": ["887ba442-1505-4a2e-806b-b3cf335f2aef", "74934e35-cf97-4755-8b51-cc4f7998e1f6", "7dfec508-ae74-4a9f-91d2-d1ca0a5a862e"]
   }, {
