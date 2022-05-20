@@ -445,13 +445,6 @@
       "target": "xpath=//button[@type='submit']",
       "targets": [],
       "value": ""
-    }, {
-      "id": "7411460a-083c-43dc-8ced-31eb347a3c9d",
-      "comment": "",
-      "command": "waitForElementPresent",
-      "target": "css=.toast-message > .ng-star-inserted",
-      "targets": [],
-      "value": ""
     }]
   }, {
     "id": "43451c6c-dc06-4e6b-8913-3c6a89b1e233",
@@ -514,7 +507,7 @@
       "id": "71dd543b-cfd1-42c1-9e49-99dd4bb6c19a",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "css=.text-muted > .fa",
+      "target": "css=.text-muted > .fa-plus",
       "targets": [],
       "value": "Add Folder Icon Button"
     }]
@@ -706,12 +699,12 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "8a4015da-aea1-41a0-acc9-9fdd014a0678",
+      "id": "5ab5e948-48dc-4fc5-8eb4-217a58e76808",
       "comment": "",
       "command": "click",
-      "target": "css=.text-muted > .fa",
+      "target": "css=.text-muted > .fa-plus",
       "targets": [
-        ["css=.text-muted > .fa", "css:finder"],
+        ["css=.text-muted > .fa-plus", "css:finder"],
         ["xpath=//h3[2]/a/i", "xpath:position"]
       ],
       "value": ""
@@ -723,22 +716,12 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "5ab5e948-48dc-4fc5-8eb4-217a58e76808",
-      "comment": "",
-      "command": "click",
-      "target": "css=.text-muted > .fa-plus",
-      "targets": [
-        ["css=.text-muted > .fa-plus", "css:finder"],
-        ["xpath=//h3[2]/a/i", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "2cf5f528-359c-480b-bed4-c0629bb18806",
       "comment": "",
       "command": "waitForElementVisible",
       "target": "id=name",
       "targets": [],
-      "value": "500"
+      "value": "1000"
     }, {
       "id": "5c389e70-35d6-4b55-9f86-d6081a3667b4",
       "comment": "",
@@ -765,12 +748,12 @@
       ],
       "value": ""
     }, {
-      "id": "b228ed4b-5d41-4394-8ebf-1038c295d06f",
+      "id": "dbf76929-ad08-4a79-ae3c-9cad126641f9",
       "comment": "",
       "command": "waitForElementPresent",
       "target": "css=.toast-message > .ng-star-inserted",
       "targets": [],
-      "value": "30000"
+      "value": "5000"
     }]
   }, {
     "id": "97e1c3f6-f7ad-4804-8bff-1e0e8c15a7e2",
