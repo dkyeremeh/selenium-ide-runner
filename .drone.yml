@@ -12,7 +12,7 @@ steps:
     commands:
       - /bin/sh ./setup-firefox.sh
       - yarn install
-      - yarn test
+      - yarn test -- --filter Vault
 # trigger:
 #   event:
 #     - pull_request
