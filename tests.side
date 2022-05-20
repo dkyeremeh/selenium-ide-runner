@@ -236,7 +236,7 @@
       "id": "3ef949d1-a04f-4912-8a73-3f68dffe4e87",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "xpath=//span[contains(.,'Log In')]",
+      "target": "xpath=//span[contains(.,' Log In')]",
       "targets": [
         ["css=.btn > span", "css:finder"],
         ["xpath=//span", "xpath:position"],
@@ -978,7 +978,7 @@
     "id": "a56c81be-45aa-440b-a21b-5055a9d6e924",
     "name": "Vault",
     "persistSession": false,
-    "parallel": false,
+    "parallel": true,
     "timeout": 300,
     "tests": ["9a672adb-b186-4e79-98b4-9fe38b6b7932", "bdb5d8ff-ef8e-4496-bd63-00f7b8de165d", "43451c6c-dc06-4e6b-8913-3c6a89b1e233", "98f50b4d-a3c8-41f2-b780-3604a617f4aa"]
   }],
