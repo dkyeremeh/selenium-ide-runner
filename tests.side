@@ -963,24 +963,24 @@
   "suites": [{
     "id": "060c8c9c-d13c-4c10-ab8f-8202cf2b722c",
     "name": "Account",
-    "persistSession": false,
-    "parallel": true,
+    "persistSession": true,
+    "parallel": false,
     "timeout": 300,
-    "tests": ["005f8e00-febe-4108-8f24-d286285ea239", "92d4eed8-8caa-4135-94df-3e59c72ba2db"]
+    "tests": ["92d4eed8-8caa-4135-94df-3e59c72ba2db", "005f8e00-febe-4108-8f24-d286285ea239" ]
   }, {
     "id": "80963500-4e61-4944-8376-747f1611b152",
     "name": "Home",
     "persistSession": false,
-    "parallel": true,
+    "parallel": false,
     "timeout": 300,
     "tests": ["887ba442-1505-4a2e-806b-b3cf335f2aef", "74934e35-cf97-4755-8b51-cc4f7998e1f6", "7dfec508-ae74-4a9f-91d2-d1ca0a5a862e"]
   }, {
     "id": "a56c81be-45aa-440b-a21b-5055a9d6e924",
     "name": "Vault",
-    "persistSession": false,
-    "parallel": true,
+    "persistSession": true,
+    "parallel": false,
     "timeout": 300,
-    "tests": ["9a672adb-b186-4e79-98b4-9fe38b6b7932", "bdb5d8ff-ef8e-4496-bd63-00f7b8de165d", "43451c6c-dc06-4e6b-8913-3c6a89b1e233", "98f50b4d-a3c8-41f2-b780-3604a617f4aa"]
+    "tests": ["43451c6c-dc06-4e6b-8913-3c6a89b1e233", "9a672adb-b186-4e79-98b4-9fe38b6b7932", "bdb5d8ff-ef8e-4496-bd63-00f7b8de165d", "98f50b4d-a3c8-41f2-b780-3604a617f4aa"]
   }],
   "urls": ["https://vault.test.dekyfin.com/"],
   "plugins": []
