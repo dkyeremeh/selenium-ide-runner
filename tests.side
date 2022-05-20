@@ -184,7 +184,7 @@
       "command": "waitForElementPresent",
       "target": "css=.toast-message > .ng-star-inserted",
       "targets": [],
-      "value": ""
+      "value": "1000"
     }]
   }, {
     "id": "74934e35-cf97-4755-8b51-cc4f7998e1f6",
@@ -236,7 +236,7 @@
       "id": "3ef949d1-a04f-4912-8a73-3f68dffe4e87",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "xpath=//span[contains(.,' Log In')]",
+      "target": "xpath=//span[contains(.,'Log In')]",
       "targets": [
         ["css=.btn > span", "css:finder"],
         ["xpath=//span", "xpath:position"],
@@ -679,7 +679,7 @@
       "command": "waitForElementPresent",
       "target": "css=.toast-message > .ng-star-inserted",
       "targets": [],
-      "value": ""
+      "value": "2000"
     }]
   }, {
     "id": "bdb5d8ff-ef8e-4496-bd63-00f7b8de165d",
@@ -753,7 +753,7 @@
       "command": "waitForElementPresent",
       "target": "css=.toast-message > .ng-star-inserted",
       "targets": [],
-      "value": "5000"
+      "value": "2000"
     }]
   }, {
     "id": "97e1c3f6-f7ad-4804-8bff-1e0e8c15a7e2",
@@ -946,7 +946,7 @@
       "command": "waitForElementPresent",
       "target": "css=.toast-message > .ng-star-inserted",
       "targets": [],
-      "value": "30000"
+      "value": "3000"
     }]
   }, {
     "id": "1855384c-a7dd-468a-86e9-0bfb75ca4ffe",
